@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function Forecast() {
-  const [temperature, setTemperature] = useState();
+  const [temperature, setTemperature] = useState(null);
   function showTemp(response) {
     setTemperature(response.data.main.temp);
   }

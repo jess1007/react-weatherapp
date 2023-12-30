@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Weather.css";
 import Forecast from "./Forecast";
@@ -8,15 +9,24 @@ import { faSun } from "@fortawesome/free-solid-svg-icons";
 import { faPercent } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 function Weather() {
+  const [location, setLocation] = useState("");
+  const handleLocationChange = (event) => {
+    setLocation(event.target.value);
+  };
+  const handleSearch = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="container mt-4">
-      <form>
+      <form onSubmit={handleSearch}>
         <div className="row">
           <div className="col-6">
             <input
               className="form-control"
               type="search"
               placeholder="Enter a city"
+              value={location}
+              onChange={handleLocationChange}
             />
           </div>
           <div className="col-6 d-flex gap-3">
@@ -138,5 +148,4 @@ function Weather() {
     </div>
   );
 }
-
 export default Weather;
