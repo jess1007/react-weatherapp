@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Maps&family=Ubuntu:wght@300;400;500;700&display=swap");
+.container {
+  padding: 25px;
+  background: linear-gradient(
+    174.2deg,
+    rgba(255, 244, 228, 1) 7.1%,
+    rgba(240, 246, 238, 1) 67.4%
+  );
+  border-radius: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.current-btn {
+  padding: 6px 12px;
+  background: #8e53d1;
+  border-radius: 7px;
+  border-style: none;
+  color: white;
+}
+.search-btn {
+  padding: 6px 12px;
+  background: #bae2a5;
+  border-radius: 7px;
+  border-style: none;
+  color: white;
+}
+.today-weather {
+  padding: 30px 12px;
+}
+h4.now-header {
+  font-size: 20px;
+  margin-top: 4%;
+}
+h5.now-header {
+  font-size: 15px;
+  margin: 0.8rem;
+}
+.weather-today-icon {
+  margin-left: 30%;
+}
+
+p.weather-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+p.today-forecast {
+  text-align: center;
+  margin-top: 5px;
+  line-height: 1.2;
+  font-size: 14px;
+  word-spacing: -1px;
+}
