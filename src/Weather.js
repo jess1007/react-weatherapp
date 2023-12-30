@@ -17,7 +17,7 @@ function Weather() {
     event.preventDefault();
   };
   return (
-    <div className="container mt-4">
+    <div className="container-weather mt-4">
       <form onSubmit={handleSearch}>
         <div className="row">
           <div className="col-6">
