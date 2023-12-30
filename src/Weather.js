@@ -42,7 +42,7 @@ function Weather() {
       </form>
       <div className="row">
         <div className="col-6 today-weather">
-          <h1 className="fw-bold current-city">MELBOURNE</h1>
+          <h1 className="fw-bold current-city">{location}</h1>
           <div className="weather-today-icon">
             <ReactAnimatedWeather
               icon="CLEAR_DAY"
@@ -53,17 +53,17 @@ function Weather() {
           </div>
         </div>
         <div className="col-6 today-weather">
-          <div className="d-flex">
+          <div className="d-flex gap-3">
             <h4 className="now-header">NOW</h4>
-            <h5 className="now-header text-muted">Updated at 7.45</h5>
+            <h4 className="now-header text-muted fs-6 mt-1">Updated at 7.45</h4>
           </div>
-          <div className="current-temperature d-flex">
+          <div className="current-temperature d-flex gap-3">
             <h4 className="now-header">
               <Forecast />
             </h4>
-            <h5 className="now-header text-muted ms-4">
-              Feels like <b className="fs-6">19°C</b>
-            </h5>
+            <h4 className="now-header text-muted fs-6 mt-1">
+              Feels like <b>19°C</b>
+            </h4>
           </div>
           <p className="weather-description">Partly cloudy</p>
         </div>
