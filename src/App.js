@@ -3,9 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Weather from "./Weather";
 function App() {
   return (
-    <div className="container App">
-      <Weather />
-      <footer>
+    <div className="App">
+      <div className="container">
+        <Weather />
+
         <small>
           This{" "}
           <a
@@ -17,7 +18,7 @@ function App() {
           </a>{" "}
           was coded by Jess Gernelle
         </small>
-      </footer>
+      </div>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Weather() {
     event.preventDefault();
   };
   return (
-    <div className="container-weather mt-4">
+    <div className="container container-weather mt-4">
       <form onSubmit={handleSearch}>
         <div className="row">
           <div className="col-6">
@@ -25,17 +25,18 @@ function Weather() {
               className="form-control"
               type="search"
               placeholder="Enter a city"
+              autoFocus="on"
               value={location}
               onChange={handleLocationChange}
             />
           </div>
           <div className="col-6 d-flex gap-3">
-            <button className="search-btn" type="submit">
+            <button className="search-btn w-50" type="submit">
               Search
             </button>
 
-            <button className="current-btn" type="submit">
-              Current
+            <button className="current-btn w-50" type="submit">
+              Your location
             </button>
           </div>
         </div>
