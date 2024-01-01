@@ -28,6 +28,10 @@ function Weather() {
       feelslike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       timestamp: new Date(response.data.dt * 1000),
+      tempmin: response.data.main.temp_min,
+      tempmax: response.data.main.temp_max,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
     });
   }
   if (forecast.ready) {
@@ -109,7 +113,7 @@ function Weather() {
               <p className="today-forecast">
                 Humidity
                 <br />
-                <b> 20%</b>
+                <b> {forecast.humidity} %</b>
               </p>
               <FontAwesomeIcon
                 icon={faWind}
@@ -125,7 +129,7 @@ function Weather() {
               />
               <p className="today-forecast">
                 Wind <br />
-                <b> extreme</b>
+                <b> {Math.round(forecast.wind)} km/h</b>
               </p>
             </div>
           </div>
@@ -146,7 +150,7 @@ function Weather() {
               <p className="today-forecast">
                 Min
                 <br />
-                <b> 20km/h</b>
+                <b> {Math.round(forecast.tempmin)}°</b>
               </p>
               <FontAwesomeIcon
                 icon={faTemperatureArrowUp}
@@ -164,7 +168,7 @@ function Weather() {
                 {" "}
                 Max
                 <br />
-                <b> 20%</b>{" "}
+                <b> {Math.round(forecast.tempmax)}°</b>{" "}
               </p>
             </div>
           </div>
