@@ -31,14 +31,7 @@ function Weatherdata(props) {
             Updated at {updatedTime}
           </h4>
         </div>
-        <div className="current-temperature d-flex gap-3">
-          <h4 className="now-header">
-            <WeatherTemperature celcius={props.data.temperature} />
-          </h4>
-          <h4 className="now-header text-muted fs-6 mt-1">
-            Feels like <WeatherTemperature celcius={props.data.temperature} />
-          </h4>
-        </div>
+        <WeatherTemperature celcius={props.data.temperature} />
         <p className="weather-description text-capitalize">
           {props.data.description}
         </p>
