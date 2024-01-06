@@ -32,7 +32,9 @@ function Weatherdata(props) {
           </h4>
         </div>
         <div className="current-temperature d-flex gap-3">
-          <h4 className="now-header">{Math.round(props.data.temperature)}°C</h4>
+          <h4 className="now-header">
+            <WeatherTemperature celcius={props.data.temperature} />
+          </h4>
           <h4 className="now-header text-muted fs-6 mt-1">
             Feels like <WeatherTemperature celcius={props.data.temperature} />
           </h4>
