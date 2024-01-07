@@ -28,7 +28,7 @@ export default function WeatherTemperature(props) {
           </span>
         </h4>
         <h4 className="now-header text-muted fs-6 mt-1">
-          Feels like {Math.round(props.celcius)}
+          Feels like {Math.round(props.celcius)}°
         </h4>
       </div>
     );

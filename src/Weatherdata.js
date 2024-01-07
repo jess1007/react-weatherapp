@@ -2,6 +2,7 @@ import React from "react";
 import Weathericon from "./Weathericon";
 import Fontawesome from "./Fontawesome";
 import WeatherTemperature from "./Weathertemperature";
+import WeatherDailyForecast from "./WeatherDailyForecast";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import { faTemperatureArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { faTemperatureArrowUp } from "@fortawesome/free-solid-svg-icons";
@@ -93,6 +94,7 @@ function Weatherdata(props) {
           </div>
         </div>
       </div>
+      <WeatherDailyForecast />
     </div>
   );
 }
