@@ -23,6 +23,7 @@ function Weather(props) {
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       icon: response.data.weather[0].icon,
+      coordinates: response.data.coord,
     });
   }
   function handleSubmit(event) {
@@ -34,6 +35,7 @@ function Weather(props) {
   }
 
   function SearchWeather() {
+    console.log(forecast.coordinates);
     const apiKey = "65dff01a3e726fe271a345c212c53929";
     let units = "metric";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&units=${units}`;

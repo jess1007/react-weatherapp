@@ -28,12 +28,13 @@ export default function WeatherTemperature(props) {
           </span>
         </h4>
         <h4 className="now-header text-muted fs-6 mt-1">
-          Feels like {Math.round(props.celcius)}°
+          Feels like {Math.round(props.feelslikecelcius)}°
         </h4>
       </div>
     );
   } else {
     let farenheit = (props.celcius * 5) / 9 + 32;
+    let feelslikefarenheit = (props.feelslikecelcius * 5) / 9 + 32;
     return (
       <div className="current-temperature d-flex gap-3">
         <h4 className="now-header">
@@ -51,7 +52,7 @@ export default function WeatherTemperature(props) {
           </span>
         </h4>
         <h4 className="now-header text-muted fs-6 mt-1">
-          Feels like {Math.round(farenheit)}°
+          Feels like {Math.round(feelslikefarenheit)}°
         </h4>
       </div>
     );

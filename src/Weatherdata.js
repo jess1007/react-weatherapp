@@ -22,7 +22,7 @@ function Weatherdata(props) {
           {props.data.city}
         </h1>
         <div className="weather-today-icon">
-          <Weathericon code={props.data.icon} />
+          <Weathericon code={props.data.icon} size={70} />
         </div>
       </div>
       <div className="col-6 today-weather">
@@ -32,7 +32,10 @@ function Weatherdata(props) {
             Updated at {updatedTime}
           </h4>
         </div>
-        <WeatherTemperature celcius={props.data.temperature} />
+        <WeatherTemperature
+          celcius={props.data.temperature}
+          feelslikecelcius={props.data.feelslike}
+        />
         <p className="weather-description text-capitalize">
           {props.data.description}
         </p>
@@ -94,7 +97,7 @@ function Weatherdata(props) {
           </div>
         </div>
       </div>
-      <WeatherDailyForecast />
+      <WeatherDailyForecast coordinates={props.data.coordinates} />
     </div>
   );
 }
