@@ -9,16 +9,10 @@
   border-radius: 15px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.current-btn {
-  padding: 6px 12px;
-  background: #8e53d1;
-  border-radius: 7px;
-  border-style: none;
-  color: white;
-}
+
 .search-btn {
   padding: 6px 12px;
-  background: #bae2a5;
+  background: #f75838;
   border-radius: 7px;
   border-style: none;
   color: white;

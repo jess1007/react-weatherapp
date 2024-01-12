@@ -52,7 +52,7 @@ function Weather(props) {
       <div className="container container-weather mt-4">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6">
+            <div className="col-8">
               <input
                 className="form-control"
                 type="search"
@@ -62,12 +62,9 @@ function Weather(props) {
                 onChange={handleLocationChange}
               />
             </div>
-            <div className="col-6 d-flex gap-3">
+            <div className="col-4 d-flex justify-content-center">
               <button className="search-btn w-50" type="submit">
                 Search
-              </button>
-              <button className="current-btn w-50" type="submit">
-                Your location
               </button>
             </div>
           </div>

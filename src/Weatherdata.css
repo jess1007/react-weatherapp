@@ -1,0 +1,10 @@
+.current-city-header {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+h1.current-city {
+  letter-spacing: -2px;
+}
